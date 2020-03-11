@@ -24,7 +24,7 @@ func new_game():
 
 
 func _on_MobTimer_timeout():
-	var mob_speed_mod = 0
+	var mob_speed_mod = score*5
 	$MobPath/MobSpawnLocation.set_offset(randi())
 	var mob = Mob.instance()
 	add_child(mob)
